@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Signup from './components/Signup';
 import Login from './components/Login';
-import Welcome from './components/Welcome';
+import Welcome from './components/ComposeEmail';
+import ReceivedMails from './components/ReceivedMails';
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
       <Routes>
       <Route path="/" element={<Signup />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/welcome" element={<Welcome />} />
+      <Route path="/receivedmails" element={<ReceivedMails />} />
+      <Route path="/compose" element={<Welcome />} />
+      
       
       </Routes>
     </Router>

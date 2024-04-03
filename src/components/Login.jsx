@@ -21,7 +21,7 @@ const Login = () => {
       const user = userCredential.user;
       console.log('User has successfully logged in');
       localStorage.setItem('token', user.accessToken);
-      navigate('/welcome');
+      navigate('/receivedmails');
       // You can store the user token in local storage or state here if needed
 
     } catch (error) {
